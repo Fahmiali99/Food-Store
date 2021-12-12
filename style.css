@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  /*tidak bisa scroll kanan*/
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  background: #577bc1;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  color: black;
+  height: 70px;
+  align-items: center;
+  z-index: 6;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 17%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.65em;
+  font-family: "M PLUS 1p", sans-serif;
+  font-style: normal;
+}
+
+a.active,
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* -------------------------------------------------------------- */
+/* Menu toggle */
+.menu-toggle {
+  display: none;
+  /*display normal*/
+  align-items: center;
+  flex-direction: column;
+  height: 15px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 6;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 42px;
+  top: -3px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: cadetblue;
+}
+/* Responsive Breakout */
+
+/* Ukuran tablet*/
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 150px;
+  }
+}
+
+/* Ukuran mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    /*memulai toggle*/
+    right: 0;
+    top: 0;
+    width: 60%;
+    /*lebar slidebar*/
+    height: 100vh;
+    /* Viewport Heigh / Tinggi layar yang kita lihat*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(101, 155, 255);
+    z-index: -1;
+    /*umpetin slide bar dari navbar*/
+    transform: translateX(100%);
+    /*awal slideBar ngumpet ke kanan dulu*/
+    /*--> LANJUT tambahakn di Body*/
+    transition: all 1s;
+    opacity: 0;
+    /* position: fixed; */
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+    /*jika UL terkenal kelas slide/navigasi BALIKIN lagi ke posisi  awal (0)*/
+    z-index: 5;
+  }
+}
