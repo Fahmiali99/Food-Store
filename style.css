@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   /*tidak bisa scroll kanan*/
 }
@@ -90,10 +90,58 @@ main {
   width: 100%;
   height: auto;
   display: flex;
+
+  /* background-color: cadetblue; */
+}
+
+.contianer-store {
+  width: 100%;
+  height: auto;
+  display: flex;
   justify-content: center;
+  margin-left: -10%;
+  padding: 5% 0px;
+  background-color: blueviolet;
+}
+
+.store-left {
+  width: 100%;
+  height: auto;
+  background-color: rgb(243, 182, 13);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  float: left;
+  left: 100%;
+}
+
+.container-store-left {
+  width: 50%;
+  background-color: burlywood;
+}
+
+.container-store-right {
+  width: 50%;
   background-color: cadetblue;
 }
-/* Responsive Breakout */
+
+aside {
+  width: 30%;
+  background-color: red;
+  float: right;
+  position: absolute;
+  right: 5%;
+}
+/* Footer */
+footer {
+  width: 100%;
+  height: 10%;
+  background-color: #577bc1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
 
 /* Ukuran tablet*/
 @media screen and (max-width: 768px) {
