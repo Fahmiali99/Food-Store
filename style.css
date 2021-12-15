@@ -86,7 +86,7 @@ a {
 }
 
 aside {
-  width: 20%;
+  width: 25%;
   float: right;
   /* background-color: aqua; */
 }
@@ -96,6 +96,59 @@ aside {
   background-color: bisque;
   width: 75%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+#content {
+  width: 73%;
+  height: auto;
+  background-color: cadetblue;
+  float: left;
+}
+
+.container-artikel-store {
+  display: flex;
+  padding: 5% 5%;
+}
+
+.artikel-left {
+  width: 100%;
+  background-color: #57c183;
+  display: flex;
+  justify-content: center;
+}
+
+.artikel-rihgt {
+  width: 100%;
+  background-color: #f8cf5e;
+  display: flex;
+  justify-content: center;
+}
+
+.content-relasi {
+  display: flex;
+  justify-content: center;
+  padding: 5% 5%;
+  background-color: burlywood;
+}
+
+footer {
+  left: 0;
+  width: 100%;
+  background-color: #577bc1;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
 }
 
 /* Ukuran tablet*/
