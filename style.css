@@ -9,6 +9,19 @@ body {
   /*tidak bisa scroll kanan*/
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #343a40;
+}
+
+p {
+  color: #6c757d;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -105,8 +118,8 @@ main {
 
 #content {
   width: 73%;
-  height: auto;
-  background-color: cadetblue;
+  /* height: auto;
+  background-color: cadetblue; */
   float: left;
 }
 
@@ -117,7 +130,7 @@ main {
 
 .artikel-left {
   width: 100%;
-  background-color: #57c183;
+  /* background-color: #57c183; */
   display: flex;
   justify-content: center;
 }
@@ -153,6 +166,17 @@ footer {
   justify-content: center;
 }
 
+.container-food-center {
+  width: 100%;
+
+  background-color: #577bc1;
+}
+
+.food-store {
+  display: flex;
+  justify-content: center;
+}
+
 /* Ukuran tablet*/
 @media screen and (max-width: 768px) {
   nav ul {
@@ -178,12 +202,34 @@ footer {
     height: 45px;
   }
 
+  .container-time {
+    width: 100%;
+    display: flex;
+    color: #adb5bd;
+  }
+
   .baner-store {
     width: 100%;
     height: 300px;
     display: flex;
     align-items: center;
   }
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.button2 {
+  padding: 12px 28px;
 }
 
 /* Ukuran mobile */
