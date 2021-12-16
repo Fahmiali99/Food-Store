@@ -19,6 +19,7 @@ h6 {
 }
 
 p {
+  font-family: "Poppins", sans-serif;
   color: #6c757d;
 }
 
@@ -30,7 +31,7 @@ header {
 
 nav {
   display: flex;
-  background: #577bc1;
+  background: #cee5d0;
   justify-content: space-around;
   /* padding: 20px 0; */
   color: black;
@@ -125,7 +126,7 @@ main {
 
 .container-artikel-store {
   display: flex;
-  padding: 5% 5%;
+  padding: 2% 5%;
 }
 
 .artikel-left {
@@ -133,13 +134,15 @@ main {
   /* background-color: #57c183; */
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .artikel-rihgt {
   width: 100%;
-  background-color: #f8cf5e;
+  /* background-color: #f8cf5e; */
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .content-relasi {
@@ -153,7 +156,7 @@ footer {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: #577bc1;
+  background-color: #cee5d0;
   color: white;
   text-align: center;
   display: flex;
@@ -168,13 +171,32 @@ footer {
 
 .container-food-center {
   width: 100%;
-
-  background-color: #577bc1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* 
+  background-color: #577bc1; */
 }
 
 .food-store {
   display: flex;
   justify-content: center;
+  margin: 15px;
+}
+
+.title-store {
+  padding: 3%;
+}
+
+#watch {
+  height: 5%;
+  align-items: center;
+  display: flex;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.title {
+  width: 50%;
+  padding: 0% 10%;
 }
 
 /* Ukuran tablet*/
@@ -227,6 +249,7 @@ footer {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
+  margin-top: 15px;
 }
 .button2 {
   padding: 12px 28px;
