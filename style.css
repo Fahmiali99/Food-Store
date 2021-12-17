@@ -111,18 +111,20 @@ aside {
 
 .container-filter {
   padding: 10% 10%;
-  background-color: bisque;
+  background-color: #4caf50;
   width: 75%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .category1 {
   width: auto;
-  background-color: #4caf50;
-  padding: 5% 15%;
+  background-color: #cee5d0;
+  padding: 4% 5%;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .filter-food {
