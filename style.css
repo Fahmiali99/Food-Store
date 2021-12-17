@@ -114,6 +114,31 @@ aside {
   background-color: bisque;
   width: 75%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.category1 {
+  width: auto;
+  background-color: #4caf50;
+  padding: 5% 15%;
+  border-radius: 5px;
+}
+
+.filter-food {
+  width: 100%;
+  display: flex;
+}
+
+.filter-food-img {
+  display: flex;
+  align-items: center;
+}
+
+.filter-food-img img {
+  display: flex;
+  width: 20%;
+  margin-right: 5%;
 }
 
 main {
