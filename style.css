@@ -160,6 +160,12 @@ main {
   padding: 2% 5%;
 }
 
+.content-ban {
+  display: flex;
+  padding: 2% 5%;
+  height: auto;
+}
+
 .artikel-left {
   width: 100%;
   /* background-color: #57c183; */
@@ -169,6 +175,22 @@ main {
 }
 
 .artikel-rihgt {
+  width: 100%;
+  /* background-color: #f8cf5e; */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.kiri-ban {
+  width: 100%;
+  /* background-color: #57c183; */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.kanan-ban {
   width: 100%;
   /* background-color: #f8cf5e; */
   display: flex;
@@ -211,6 +233,33 @@ footer {
   margin: 15px;
 }
 
+.food-store-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 70px;
+}
+
+.food-store-img-ii {
+  height: 100%;
+  width: 100%;
+  display: inherit;
+  align-items: center;
+}
+
+/* .img-store-baner {
+  width: 100%;
+  height: 65%;
+  z-index: 2;
+  background-image: url(/image/store/undraw_shopping_app_flsj.png);
+  background-size: cover;
+} */
+
+.container-heigh {
+  height: 100vh;
+}
+
 .title-store {
   padding: 3%;
 }
@@ -233,6 +282,18 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+#about-baner {
+  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .food-store-img-ii {
+    display: none;
+  }
 }
 
 /* Ukuran tablet*/
@@ -292,6 +353,34 @@ footer {
   .container-title-all {
     font-size: 13px;
     font-style: italic;
+  }
+  .kanan-ban {
+    width: 100px;
+    /* margin-top: 500px; */
+    z-index: 1;
+  }
+  #about-baner {
+    width: 300px;
+  }
+  .btn-buying {
+    width: 50%;
+  }
+  .food-baner {
+    width: 100%;
+    height: auto;
+  }
+
+  .kiri-ban {
+    height: 65%;
+  }
+  .kanan-ban {
+    width: 100%;
+  }
+  .food-store-img {
+    display: none;
+  }
+  .food-baner {
+    padding-top: 100px;
   }
 }
 
