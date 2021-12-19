@@ -198,6 +198,20 @@ main {
   padding: 10px;
 }
 
+.kanan-ban-promo {
+  width: 100%;
+  /* background-color: #f8cf5e; */
+  display: flex;
+  justify-content: center;
+}
+
+.kanan-ban-big-promo {
+  width: 100%;
+  /* background-color: #f8cf5e; */
+  display: flex;
+  justify-content: center;
+}
+
 .container-title-all {
   padding-top: 20px;
 }
@@ -270,6 +284,11 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.container-food-center-promo {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .food-store {
   display: flex;
   justify-content: center;
@@ -284,7 +303,21 @@ footer {
   padding: 70px;
 }
 
+.food-store-img-promo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .food-store-img-ii {
+  height: 100%;
+  width: 100%;
+  display: inherit;
+  align-items: center;
+}
+
+.food-store-img-iii {
   height: 100%;
   width: 100%;
   display: inherit;
@@ -335,13 +368,35 @@ footer {
   width: 100%;
 }
 
+.promo-onCenter {
+  font-style: italic;
+}
+
+#title-promo {
+  color: #0d6e10;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .food-store-img-ii {
     display: none;
   }
-  /* .container-kanan-promo {
+
+  /* .img-store-baner {
     display: none;
   } */
+  /* .food-store-img-iii {
+    display: none;
+  } */
+  /* .promo-onCenter {
+    display: none;
+  } */
+
+  .point-title-promo {
+    width: 100%;
+    margin-left: 7%;
+  }
 }
 
 /* Ukuran tablet*/
@@ -373,6 +428,12 @@ footer {
   }
 
   .button-buy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-buy-promo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -418,6 +479,13 @@ footer {
     height: auto;
   }
 
+  .food-baner-promo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
   .kiri-ban {
     height: 65%;
   }
@@ -445,6 +513,62 @@ footer {
   .container-kanan-prom {
     width: 100%;
     display: inherit;
+  }
+  .food-store-img-promo {
+    display: none;
+  }
+  .big-promo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img-big-promo {
+    width: 100%;
+  }
+  .kanan-ban-big-promo {
+    display: none;
+  }
+  .img-out-promo-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img-out-promo-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  /* .title-promo-on {
+    width: 100%;
+
+    background-color: #4caf50;
+  } */
+  .promo-onCenter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: -5%;
+    font-style: italic;
+  }
+  .point-title-promo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+  }
+
+  .promo-on {
+    width: 100%;
+    background-color: #4caf50;
+    display: flex;
+  }
+  .button-buy-promo {
+    display: none;
+  }
+  #title-promo {
+    font-size: 25px;
   }
 }
 
