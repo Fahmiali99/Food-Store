@@ -5,424 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- Pacifico -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- M Plus 1p -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Lobster -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <title>FAL - Food Store</title>
+    <title>Document</title>
   </head>
-
   <body>
     <header>
-      <nav class="logo">
-        <h4><a href="/">FAL .Store</a></h4>
-        <ul class="slide">
+      <a href="#" class="logo text-decoration-none">Company</a>
+
+      <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar">Menu</label>
+
+      <nav class="navbar">
+        <ul style="margin-bottom: -21px">
           <li>
-            <a class="active color" href="/">Home</a>
+            <a href="#">ABOUT</a>
+            <ul>
+              <li><a href="#">HISTORY</a></li>
+              <li><a href="#">VISION MISSION</a></li>
+            </ul>
           </li>
-          <li><a class="color" href="/Store">Store</a></li>
-          <li>
-            <a class="color" href="/About">About</a>
-          </li>
+          <li><a href="#">OUR WORK</a></li>
+          <li><a href="#">OUR TEAM</a></li>
+          <li><a href="#">CONTACT</a></li>
         </ul>
-        <div class="menu-toggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
-      <script src="script.js"></script>
     </header>
 
-    <figure class="background">
-      <img
-        class="img-background"
-        src="/image/background/Polygon 1.png"
-        alt=""
-      />
-    </figure>
+    <!-- <div>
+      <img src="/images/bg.jpg" alt="" width="100%" />
+    </div> -->
 
-    <div class="content-ban">
-      <div class="kiri-ban">
-        <div
-          class="container-food-center"
-          style="display: flex; align-items: center; box-shadow: none"
-        >
-          <div class="food-baner">
-            <h1>Selamat Datang di Food Store</h1>
-            <p id="about-baner">
-              Nikmati promo makanan yang tersedia pada toko kami,makanan yang
-              tersedia di toko kami adalah makanan segar, anda bisa menikmatinya
-            </p>
-            <div class="button-buy btn-buying">
-              <button class="button button2">Beli</button>
-              <a href="https://www.instagram.com/fahmi_ali13/">
-                <button class="buttons button3">
-                  <ul>
-                    <i class="fas fa-share-alt"></i>
-                  </ul>
-                </button>
-              </a>
-              <button class="buttons button3">
-                <ul>
-                  <i class="fas fa-cart-arrow-down"></i>
-                </ul>
-              </button>
+    <div >
+        <h2>Carousel Example</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="/images/bg.jpg" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
             </div>
+      
+            <div class="item">
+              <img src="/images/bg.jpg" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="/images/bg.jpg" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+              </div>
+            </div>
+        
           </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
-      <div class="kanan-ban">
-        <div class="container-food-center" style="box-shadow: none">
-          <div class="food-store-img">
-            <div class="img-store-baner">
-              <img
-                src="/image/store/undraw_shopping_app_flsj.png"
-                alt=""
-                width="100%"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="baner-out">
-      <div class="kanan-ban">
-        <div class="container-food-center" style="box-shadow: none">
-          <div class="food-store-img-ii">
-            <div class="img-store-baner">
-              <img
-                src="/image/store/undraw_shopping_app_flsj.png"
-                alt=""
-                width="100%"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <main>
-      <article></article>
-
-      <div id="content">
-        <div class="title">
-          <h1>Food Store</h1>
-          <p id="title-about">
-            Anda bisa memilih makanan yang anda sukai saat ini, dan yang kami
-            tampilkan makanan yang terpopuler saat ini.
-          </p>
-        </div>
-        <article>
-          <div class="container-artikel-store">
-            <div class="artikel-left">
-              <div class="container-food-center">
-                <div class="food-store">
-                  <img src="/image/store/food1.png" alt="" width="70%" />
-                </div>
-                <div class="title-store">
-                  <h2>Croffle Coklat, Keju, Green Tea</h2>
-                  <div class="title-about-title">
-                    <ul id="watch">
-                      <i class="far fa-clock"></i>
-                      <p>18/12/2021</p>
-                    </ul>
-                    <div class="button-buy">
-                      <button class="button button2">$ 15</button>
-                      <button class="button button2">
-                        <ul>
-                          <i class="fas fa-cart-plus"></i>
-                        </ul>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="artikel-rihgt">
-              <div class="container-food-center">
-                <div class="food-store">
-                  <img src="/image/store/food2.png" alt="" width="70%" />
-                </div>
-                <div class="title-store">
-                  <h2>Double Whopper Burger</h2>
-                  <div class="title-about-title">
-                    <ul id="watch">
-                      <i class="far fa-clock"></i>
-                      <p>18/12/2021</p>
-                    </ul>
-                    <div class="button-buy">
-                      <button class="button button2">$ 25</button>
-                      <button class="button button2">
-                        <ul>
-                          <i class="fas fa-cart-plus"></i>
-                        </ul>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <div class="container-artikel-store">
-            <div class="artikel-left">
-              <div class="container-food-center">
-                <div class="food-store">
-                  <img src="/image/store/food3.png" alt="" width="70%" />
-                </div>
-                <div class="title-store">
-                  <h2>Cireng Sambal Rujak</h2>
-                  <div class="title-about-title">
-                    <ul id="watch">
-                      <i class="far fa-clock"></i>
-                      <p>18/12/2021</p>
-                    </ul>
-                    <div class="button-buy">
-                      <button class="button button2">$ 5</button>
-                      <button class="button button2">
-                        <ul>
-                          <i class="fas fa-cart-plus"></i>
-                        </ul>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="artikel-rihgt">
-              <div class="container-food-center">
-                <div class="food-store">
-                  <img src="/image/store/food4.png" alt="" width="70%" />
-                </div>
-                <div class="title-store">
-                  <h2>King Kebab</h2>
-                  <div class="title-about-title">
-                    <ul id="watch">
-                      <i class="far fa-clock"></i>
-                      <p>18/12/2021</p>
-                    </ul>
-                    <div class="button-buy">
-                      <button class="button button2">$ 10</button>
-                      <button class="button button2">
-                        <ul>
-                          <i class="fas fa-cart-plus"></i>
-                        </ul>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <div class="title-promo">
-            <div class="point-title-promo">
-              <h1 id="title-promo">Promo</h1>
-            </div>
-            <div
-              class="promo-onCenter"
-              style="width: 100%; display: flex; justify-content: end"
-            >
-              <a href="#">
-                <p>Selengkapnya</p>
-              </a>
-            </div>
-          </div>
-          <div class="content-ban">
-            <div class="kiri-ban">
-              <div
-                class="container-food-center-promo"
-                style="
-                  display: flex;
-                  align-items: center;
-                  box-shadow: none;
-                  justify-content: end;
-                "
-              >
-                <div class="food-baner-promo">
-                  <div class="big-promo">
-                    <img
-                      class="img-big-promo"
-                      src="/image/about/food-1a.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="kanan-ban-big-promo">
-              <div class="container-food-center" style="box-shadow: none">
-                <div class="food-store-img-promo">
-                  <div class="img-store-baner">
-                    <img src="/image/about/food-2b.png" alt="" />
-                    <img src="/image/about/food-3c.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="baner-out">
-            <div class="kanan-ban-promo">
-              <div class="container-food-center" style="box-shadow: none">
-                <div class="food-store-img-ii">
-                  <div class="img-store-baner">
-                    <div class="img-out-promo-1">
-                      <img src="/image/about/food-2b.png" alt="" width="85%" />
-                    </div>
-                    <div class="img-out-promo-2">
-                      <img src="/image/about/food-3c.png" alt="" width="85%" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <aside>
-        <div class="container-aside">
-          <div class="container-filter">
-            <div class="title-aside" style="margin-bottom: 20px">
-              <h3>MOST POPULAR</h3>
-              <hr
-                style="
-                  background-color: #0d6e10;
-                  height: 1px;
-                  border: 0;
-                  margin-top: 10px;
-                "
-              />
-            </div>
-
-            <div class="category1">
-              <div class="filter-food">
-                <div class="filter-food-img">
-                  <img src="/image/filter/food-d.png" alt="" />
-                  <div class="title-filter-food">
-                    <h4>All Foods</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="category1">
-              <div class="filter-food">
-                <div class="filter-food-img">
-                  <img src="/image/filter/food-a.png" alt="" />
-                  <div class="title-filter-food">
-                    <h4>Fast Food</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="category1">
-              <div class="filter-food">
-                <div class="filter-food-img">
-                  <img src="/image/filter/food-b.png" alt="" />
-                  <div class="title-filter-food">
-                    <h4>Frozen Food</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="category1">
-              <div class="filter-food">
-                <div class="filter-food-img">
-                  <img src="/image/filter/food-c.png" alt="" />
-                  <div class="title-filter-food">
-                    <h4>Health Food</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <aside>
-        <div class="container-aside">
-          <div class="container-filter" style="background-color: #77d970">
-            <div class="title-aside" style="margin-bottom: 20px">
-              <h3>ACCOUNT</h3>
-              <hr
-                style="
-                  background-color: #0d6e10;
-                  height: 1px;
-                  border: 0;
-                  margin-top: 10px;
-                "
-              />
-            </div>
-
-            <div class="category1" style="background-color: #cee5d0">
-              <div class="filter-food">
-                <div class="filter-food-img">
-                  <img src="/image/profile/sign-in.png" alt="" />
-                  <div class="title-filter-food">
-                    <h4>Sign In</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="category1" style="background-color: #cee5d0">
-              <div class="filter-food">
-                <div class="filter-food-img">
-                  <img src="/image/profile/sign-up.png" alt="" />
-                  <div class="title-filter-food">
-                    <h4>Sign Up</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </main>
-    <footer>
-      <div class="container-footer">
-        <h4>@FAL</h4>
-        <p>Fahmi Ali Husni</p>
-      </div>
-    </footer>
+      
+      </body>
+      </html>
+      
   </body>
 </html>
